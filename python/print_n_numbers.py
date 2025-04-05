@@ -1,9 +1,9 @@
 try:
-    n=10
-    print("El numero seleccionado es:",n)
+    n = 10
+    print("El numero seleccionado es:", n)
 
     for x in range(n):
-    print(x)
+        print(x)
 
 except ValueError:
-  print("Error: No se puede convertir el parametro proporcionado a entero")
+    print("Error: No se puede convertir el parametro proporcionado a entero")
