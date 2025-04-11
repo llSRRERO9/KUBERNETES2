@@ -1,0 +1,21 @@
+using ExploringActions;
+using ExploringActions.Controllers;
+using Microsoft.Extensions.Logging;
+using Moq;
+namespace TestProjectExploringActions
+{
+    public class WeatherForecastControllerTest
+    {
+        [Fact]
+        public void Test_WeatherForecastController()
+        {
+            //Arrange
+            var logger = new Mock<ILogger<WeatherForecastController>>();
+            var controller= new WeatherForecastController(logger.Object);
+            //Act
+            var result = controller.Get();
+            Assert.IsType<WeatherForecast[]>(result);
+
+        }
+    }
+}
