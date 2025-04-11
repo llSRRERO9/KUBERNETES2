@@ -18,7 +18,7 @@ spec:
         app: mydeploy
     spec:
       containers:
-      - image: nginx
+      - image: nginx:1.27.4-bookworm-perl
         name: nginx
         resources: {}
 status: {}
